@@ -1,12 +1,13 @@
-// router/index.ts
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 
 import Main from '../Main.vue';
-import AddUser from '../AddUser.vue';
+import AddMember from '../AddMember.vue';
+import PopulateData from '../PopulateData.vue'
 
 const routes: RouteRecordRaw[] = [
   { path: '/', component: Main },
-  { path: '/add-user', component: AddUser },
+  { path: '/add-member', component: AddMember },
+  { path: '/populate-data', component: PopulateData },
 ];
 
 const router = createRouter({
