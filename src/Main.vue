@@ -15,6 +15,9 @@
       </div>
     </div>
     <div class="mt-8">
+      <div class="flex justify-center">
+        <p> <router-link to="/export" class="text-blue-500 hover:underline">Export data untuk migrasi</router-link></p>
+      </div>
       <template v-if="Object.keys(groupedData).length > 0">
         <div v-for="(group, initial) in groupedData" :key="initial">
           <h2 class="text-lg font-semibold mt-6">{{ initial }}</h2>
